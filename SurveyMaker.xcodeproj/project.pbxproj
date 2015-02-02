@@ -14,6 +14,8 @@
 		7E980DB41A80262700CEC469 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E980DB31A80262700CEC469 /* Images.xcassets */; };
 		7E980DB71A80262700CEC469 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E980DB51A80262700CEC469 /* LaunchScreen.xib */; };
 		7E980DC31A80262700CEC469 /* SurveyMakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E980DC21A80262700CEC469 /* SurveyMakerTests.m */; };
+		7E980DCE1A80267400CEC469 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E980DCD1A80267400CEC469 /* PreviewViewController.m */; };
+		7E980E061A8027BD00CEC469 /* SurveyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E980E051A8027BD00CEC469 /* SurveyItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		7E980DBC1A80262700CEC469 /* SurveyMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E980DC11A80262700CEC469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E980DC21A80262700CEC469 /* SurveyMakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SurveyMakerTests.m; sourceTree = "<group>"; };
+		7E980DCC1A80267400CEC469 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		7E980DCD1A80267400CEC469 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		7E980E041A8027BD00CEC469 /* SurveyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyItem.h; sourceTree = "<group>"; };
+		7E980E051A8027BD00CEC469 /* SurveyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,10 @@
 				7E980DAA1A80262600CEC469 /* AppDelegate.h */,
 				7E980DAB1A80262600CEC469 /* AppDelegate.m */,
 				7E980DAD1A80262600CEC469 /* ViewController.h */,
+				7E980DCC1A80267400CEC469 /* PreviewViewController.h */,
+				7E980DCD1A80267400CEC469 /* PreviewViewController.m */,
+				7E980E041A8027BD00CEC469 /* SurveyItem.h */,
+				7E980E051A8027BD00CEC469 /* SurveyItem.m */,
 				7E980DAE1A80262600CEC469 /* ViewController.m */,
 				7E980DB01A80262700CEC469 /* Main.storyboard */,
 				7E980DB31A80262700CEC469 /* Images.xcassets */,
@@ -222,6 +232,8 @@
 				7E980DAF1A80262600CEC469 /* ViewController.m in Sources */,
 				7E980DAC1A80262600CEC469 /* AppDelegate.m in Sources */,
 				7E980DA91A80262600CEC469 /* main.m in Sources */,
+				7E980E061A8027BD00CEC469 /* SurveyItem.m in Sources */,
+				7E980DCE1A80267400CEC469 /* PreviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

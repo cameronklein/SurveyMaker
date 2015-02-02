@@ -7,6 +7,9 @@
 //
 
 #import "PreviewViewController.h"
+#import "NewItemViewController.h"
+#import "SurveyItem.h"
+#import "SurveyItemCell.h"
 
 @interface PreviewViewController()
 
@@ -31,12 +34,18 @@
 }
 
 - (void)insertNewObject:(id)sender {
-  if (!self.items) {
-    self.items = [[NSMutableArray alloc] init];
-  }
-  [self.items insertObject:[NSDate date] atIndex:0];
-  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-  [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+//  if (!self.items) {
+//    self.items = [[NSMutableArray alloc] init];
+//  }
+//  [self.items insertObject:[NSDate date] atIndex:0];
+//  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+//  [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+  
+  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+  NewItemViewController *newVC = [storyboard instantiateViewControllerWithIdentifier:@"NEW_ITEM"];
+  
+  [self.navigationController presentViewController:newVC animated:true completion:nil];
+  
 }
 
 #pragma mark - Table View
@@ -50,10 +59,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL" forIndexPath:indexPath];
+  SurveyItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL" forIndexPath:indexPath];
   
-  NSDate *item = self.items[indexPath.row];
-  cell.textLabel.text = [item description];
+  SurveyItem *item = self.items[indexPath.row];
+  cell.titleLabel.text = item.title;
+  
   return cell;
 }
 

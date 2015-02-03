@@ -10,4 +10,14 @@
 
 @implementation SurveyItemCell
 
+- (CGFloat) getHeight {
+  
+  [self layoutSubviews];
+  CGFloat labelHeight = self.titleLabel.intrinsicContentSize.height;
+  CGFloat subViewHeight = self.subContentView.intrinsicContentSize.height;
+  
+  return labelHeight + subViewHeight + 8 + 8 + 8;
+  
+}
+
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SurveyItem.h"
 
 @interface PreviewViewController : UITableViewController
+
+- (void) addObject: (SurveyItem *) item;
 
 @end

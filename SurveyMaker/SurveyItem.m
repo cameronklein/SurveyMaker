@@ -11,3 +11,30 @@
 @implementation SurveyItem
 
 @end
+
+@implementation BooleanItem
+
+- (UIView *)subView {
+  
+  return [[UISegmentedControl alloc] initWithItems:@[@"Yes", @"No"]];
+  
+}
+
+@end
+
+@implementation MultipleChoiceItem
+
+
+
+@end
+
+@implementation TextItem
+
+- (UIView *)subView {
+  
+  UITextView *textView = [UITextView new];
+  textView.text = @"Hello!";
+  return textView;
+  
+}
+@end

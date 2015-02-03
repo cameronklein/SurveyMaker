@@ -6,10 +6,23 @@
 //  Copyright (c) 2015 Cameron Klein. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface SurveyItem : NSObject
 
 @property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) UIView  *subView;
+
+@end
+
+@interface BooleanItem : SurveyItem
+
+@end
+
+@interface TextItem : SurveyItem
+
+@end
+
+@interface MultipleChoiceItem : SurveyItem
 
 @end

@@ -10,6 +10,8 @@
 
 @interface SurveyItemCell : UITableViewCell
 
+- (CGFloat) getHeight;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIView *subContentView;
 

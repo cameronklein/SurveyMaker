@@ -10,6 +10,8 @@
 
 @interface SurveyItem : NSObject
 
+- (NSDictionary *) dictionaryFromItem;
+
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) UIView  *subView;
 

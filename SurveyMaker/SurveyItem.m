@@ -15,15 +15,20 @@
 @implementation BooleanItem
 
 - (UIView *)subView {
-  
   return [[UISegmentedControl alloc] initWithItems:@[@"Yes", @"No"]];
-  
+}
+
+- (NSDictionary *) dictionaryFromItem {
+  return @{@"title" : self.title, @"type" : @"boolean"};
 }
 
 @end
 
 @implementation MultipleChoiceItem
 
+- (NSDictionary *) dictionaryFromItem {
+  return @{@"title" : self.title, @"type" : @"multiple"};
+}
 
 
 @end
@@ -36,5 +41,9 @@
   textView.text = @"Hello!";
   return textView;
   
+}
+
+- (NSDictionary *) dictionaryFromItem {
+  return @{@"title" : self.title, @"type" : @"text"};
 }
 @end

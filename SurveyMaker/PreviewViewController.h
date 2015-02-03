@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SurveyItem.h"
 
-@interface PreviewViewController : UITableViewController
+@interface PreviewViewController : UITableViewController <UIAlertViewDelegate>
 
 - (void) addObject: (SurveyItem *) item;
 

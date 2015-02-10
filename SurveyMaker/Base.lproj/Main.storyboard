@@ -148,10 +148,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ud-Q8-TqG">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="327"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="335"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlM-Ib-ohT">
-                                                        <rect key="frame" x="281" y="86" width="38" height="24"/>
+                                                        <rect key="frame" x="281" y="94" width="38" height="24"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -166,7 +166,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ge0-iT-unM">
-                                                        <rect key="frame" x="8" y="118" width="584" height="29"/>
+                                                        <rect key="frame" x="8" y="126" width="584" height="29"/>
                                                         <segments>
                                                             <segment title="Yes / No"/>
                                                             <segment title="Text"/>
@@ -174,17 +174,24 @@
                                                         </segments>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     </segmentedControl>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choices" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUF-DE-sCS">
+                                                        <rect key="frame" x="269" y="170" width="63" height="24"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="FIk-cQ-nll" firstAttribute="top" secondItem="Fbb-b0-u0c" secondAttribute="bottom" constant="8" id="2y2-In-GGL"/>
                                                     <constraint firstItem="Ge0-iT-unM" firstAttribute="leading" secondItem="1Ud-Q8-TqG" secondAttribute="leadingMargin" id="3Ya-zR-dvk"/>
                                                     <constraint firstItem="Fbb-b0-u0c" firstAttribute="top" secondItem="1Ud-Q8-TqG" secondAttribute="topMargin" constant="8" id="6G5-KM-lgM"/>
-                                                    <constraint firstItem="qlM-Ib-ohT" firstAttribute="top" secondItem="FIk-cQ-nll" secondAttribute="bottom" constant="8" id="7hD-GK-tMo"/>
+                                                    <constraint firstItem="qlM-Ib-ohT" firstAttribute="top" secondItem="FIk-cQ-nll" secondAttribute="bottom" constant="16" id="7hD-GK-tMo"/>
                                                     <constraint firstAttribute="centerX" secondItem="qlM-Ib-ohT" secondAttribute="centerX" id="JTc-k5-cax"/>
                                                     <constraint firstAttribute="centerX" secondItem="Fbb-b0-u0c" secondAttribute="centerX" id="ROs-WY-sCa"/>
+                                                    <constraint firstAttribute="centerX" secondItem="tUF-DE-sCS" secondAttribute="centerX" id="Ruo-ry-ga6"/>
                                                     <constraint firstAttribute="trailingMargin" secondItem="FIk-cQ-nll" secondAttribute="trailing" id="fZG-9C-qjt"/>
                                                     <constraint firstItem="FIk-cQ-nll" firstAttribute="leading" secondItem="1Ud-Q8-TqG" secondAttribute="leadingMargin" id="gYr-Vl-QXP"/>
+                                                    <constraint firstItem="tUF-DE-sCS" firstAttribute="top" secondItem="Ge0-iT-unM" secondAttribute="bottom" constant="16" id="iHb-Km-ttA"/>
                                                     <constraint firstAttribute="bottom" secondItem="Ge0-iT-unM" secondAttribute="bottom" constant="181" id="qel-Dy-3dw"/>
                                                     <constraint firstAttribute="trailingMargin" secondItem="Ge0-iT-unM" secondAttribute="trailing" id="rYO-JL-GBZ"/>
                                                     <constraint firstItem="Ge0-iT-unM" firstAttribute="top" secondItem="qlM-Ib-ohT" secondAttribute="bottom" constant="8" id="uNv-et-BdC"/>
